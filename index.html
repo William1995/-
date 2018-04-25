@@ -1,6 +1,28 @@
+<!doctype html>
+<html>
+<head>
+        <meta charset="utf-8">
+        <title>大學報DEMO</title>
+        <script src="http://d3js.org/d3.v4.min.js"></script>
+</head>
+
+<body>
+<h1 class="title" >近十年出生人數依生母年齡區分之走勢圖</h1>
+
+<h3>說明：</h3>
+<p>
+   此圖希望探討台灣女性的生育年齡變化，透過將每年出生人數依照35歲去劃分，
+   我們可以發現不管總出生數如何變化，高齡產婦(根據衛生署的定義，高齡產婦是指生產時年滿35歲的婦女)人數
+   是逐年增加。隨著台灣少子化的情況，我們可以預估出生人口數會遞減，換言之，高齡產婦比率有就會不斷提升。
+   這背後有許多問題值得探討，像是高齡女性不孕機率會增加，他們是否會尋求治療、試管嬰兒等等方法，而這些方法
+   背後是否有什麼樣的問題值得被我們關注研究？
+</p>
+    
 <svg width='1800' height='400'></svg>
 <div id='tooltip' style='position:absolute;background-color:lightgray;padding:5px'></div>
-<script src="http://d3js.org/d3.v4.min.js"></script>
+    
+    
+    
 <script>
   
 // Define margins, dimensions, and some line colors
@@ -102,3 +124,6 @@ function drawTooltip() {
     .html(d => d.name + ': ' + d.history.find(h => h.year == year).population);
 }
 </script>
+
+</body>
+</html>
