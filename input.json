@@ -49,7 +49,7 @@
   },    
     
   {
-    "name": "首胎生育年齡低於35歲人數",
+    "name": "首胎生育年齡大於35歲人數",
     "show": true,
     "color": "blue",
     "currentPopulation": 56207,
@@ -98,7 +98,7 @@
   },
     
   {
-    "name": "生育年齡大於35歲人數",
+    "name": "生育年齡小於35歲人數",
     "show": true,
     "color": "red",
     "currentPopulation": 151393,
