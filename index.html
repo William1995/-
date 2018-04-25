@@ -83,7 +83,7 @@ function removeTooltip() {
 }
 
 function drawTooltip() {
-  const year = Math.floor((x.invert(d3.mouse(tipBox.node())[0]) + 5) / 10);
+  const year = Math.floor((x.invert(d3.mouse(tipBox.node())[0])));
     
   tooltipLine.attr('stroke', 'black')
     .attr('x1', x(year))
