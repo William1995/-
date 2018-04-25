@@ -106,6 +106,10 @@ function removeTooltip() {
 
 function drawTooltip() {
   const year = Math.floor((x.invert(d3.mouse(tipBox.node())[0])));
+  
+  temp.sort((a, b) => {
+    return b.history.find(h => h.year == year).population - a.history.find(h => h.year == year).population;
+  })     
     
   tooltipLine.attr('stroke', 'black')
     .attr('x1', x(year))
