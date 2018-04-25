@@ -1,52 +1,53 @@
 [
   {
-    "name": "生育年齡大於35歲人數",
+    "name": "當年總生育人數",
     "show": true,
-    "color": "red",
-    "currentPopulation": 151393,
+    "color": "green",
+    "currentPopulation": 207600,
     "history": [
       {
         "year": 2007,
-        "population": 178451
+        "population": 203711
       },
       {
         "year": 2008,
-        "population": 170097
+        "population": 196486
       },
       {
         "year": 2009,
-        "population": 164450
+        "population": 192133
       },
       {
         "year": 2010,
-        "population": 137784
+        "population": 166473
       },
       {
         "year": 2011,
-        "population": 163135
+        "population": 198348
       },
       {
         "year": 2012,
-        "population": 189946
+        "population": 234599
       },
       {
         "year": 2013,
-        "population": 152152
+        "population": 194939
       },
       {
         "year": 2014,
-        "population": 162710
+        "population": 211399
       },
       {
         "year": 2015,
-        "population": 160017
+        "population": 213093
       },
       {
         "year": 2016,
-        "population": 151393
+        "population": 207600
       }
     ]
-  },
+  },    
+    
   {
     "name": "首胎生育年齡低於35歲人數",
     "show": true,
@@ -95,52 +96,54 @@
       }
     ]
   },
+    
   {
-    "name": "當年總生育人數",
+    "name": "生育年齡大於35歲人數",
     "show": true,
-    "color": "green",
-    "currentPopulation": 207600,
+    "color": "red",
+    "currentPopulation": 151393,
     "history": [
       {
         "year": 2007,
-        "population": 203711
+        "population": 178451
       },
       {
         "year": 2008,
-        "population": 196486
+        "population": 170097
       },
       {
         "year": 2009,
-        "population": 192133
+        "population": 164450
       },
       {
         "year": 2010,
-        "population": 166473
+        "population": 137784
       },
       {
         "year": 2011,
-        "population": 198348
+        "population": 163135
       },
       {
         "year": 2012,
-        "population": 234599
+        "population": 189946
       },
       {
         "year": 2013,
-        "population": 194939
+        "population": 152152
       },
       {
         "year": 2014,
-        "population": 211399
+        "population": 162710
       },
       {
         "year": 2015,
-        "population": 213093
+        "population": 160017
       },
       {
         "year": 2016,
-        "population": 207600
+        "population": 151393
       }
     ]
-  }
+  }    
+  
 ]
