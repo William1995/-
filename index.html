@@ -69,7 +69,7 @@ chart.append('g').attr('transform', 'translate(0,' + height + ')').call(xAxis);
   
 // Load the data and draw a chart
 let temp, tipBox;
-d3.json('input.json', d => {
+d3.json('https://william1995.github.io/-/input.json', d => {
   temp = d;
 
   chart.selectAll()
