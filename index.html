@@ -9,7 +9,7 @@ const width = 800 - margin.left - margin.right;
 const height = 400 - margin.top - margin.bottom;
 
 // Define the scales and tell D3 how to draw the line
-const x = d3.scaleLinear().domain([2007, 2016]).range([5, width]);     
+const x = d3.scaleLinear().domain([2007, 2016]).range([0, width]);     
 const y = d3.scaleLinear().domain([0, 234599]).range([height, 0]);
 const line = d3.line().x(d => x(d.year)).y(d => y(d.population));
 
