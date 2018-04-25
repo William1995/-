@@ -9,8 +9,8 @@ const width = 800 - margin.left - margin.right;
 const height = 400 - margin.top - margin.bottom;
 
 // Define the scales and tell D3 how to draw the line
-const x = d3.scaleLinear().domain([1910, 2010]).range([0, width]);     
-const y = d3.scaleLinear().domain([0, 40000000]).range([height, 0]);
+const x = d3.scaleLinear().domain([2007, 2016]).range([5, width]);     
+const y = d3.scaleLinear().domain([0, 234599]).range([height, 0]);
 const line = d3.line().x(d => x(d.year)).y(d => y(d.population));
 
 const chart = d3.select('svg').append('g')
@@ -24,11 +24,30 @@ const xAxis = d3.axisBottom(x).tickFormat(d3.format('.4'));
 const yAxis = d3.axisLeft(y).tickFormat(d3.format('.2s'));
 chart.append('g').call(yAxis); 
 chart.append('g').attr('transform', 'translate(0,' + height + ')').call(xAxis);
-chart.append('text').html('State Population Over Time').attr('x', 200);
+    
+//x軸名
+ chart.append("text")
+      .text("年份")
+      .attr("x", 690)
+      .attr("y", 310)
+      .attr("dy", "1.71em")
+      .style("text-anchor", "end")
+      .attr("fill", "black")
+      .style("font-weight", "bold");
+                    
+//y軸名
+  chart.append("text")
+       .attr("x", 15)
+       .attr("y", -40)
+       .attr("dy", "1.71em")
+       .style("text-anchor", "end")
+       .attr("fill", "black")
+       .style("font-weight", "bold")
+       .text("人數");
   
 // Load the data and draw a chart
 let states, tipBox;
-d3.json('state-populations.json', d => {
+d3.json('input.json', d => {
   states = d;
 
   chart.selectAll()
