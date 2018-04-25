@@ -73,7 +73,7 @@ d3.json('input.json', d => {
     .attr('width', width)
     .attr('height', height)
     .attr('opacity', 0)
-    .on('mouseover', drawTooltip)
+    .on('mousemove', drawTooltip)
     .on('mouseout', removeTooltip);
 })
 
@@ -83,7 +83,7 @@ function removeTooltip() {
 }
 
 function drawTooltip() {
-  const year = Math.floor((x.invert(d3.mouse(tipBox.node())[0]) + 5) / 9) * 10;
+  const year = Math.floor((x.invert(d3.mouse(tipBox.node())[0]) + 5) / 10);
     
   tooltipLine.attr('stroke', 'black')
     .attr('x1', x(year))
